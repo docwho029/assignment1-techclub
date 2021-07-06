@@ -10,6 +10,8 @@
 :root {
   --rightnavwidth: 41vw;
   --leftnavwidth: 55vw;
+  --detailspic-bgcolor: #929aab52;
+  /* --detailspic-bgcolor: #d3d5fd52; */
 }
 /* nav */
 nav {
@@ -209,6 +211,9 @@ nav {
   border-radius: 10vh;
   background-color: #d3d5fd;
   margin-top: 5%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.1s ease;
 }
 
 .detailsnotes {
@@ -218,6 +223,70 @@ nav {
 
   margin-top: 5%;
   border-radius: 10vh;
+  background-color: #2d2e35;
 
-  background-color: #d3d5fd;
+  border: 10px solid #b469b700;
+  transition: all 0.1s ease;
+
+  color: rgb(211, 213, 253);
+  padding: 0.65em 1.1em;
+  text-align: center;
+}
+
+.detailspic::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  /* background: #d3d5fd52; this is transparent colour */
+  clip-path: circle(19% at 100% 50%);
+  background-color: var(--detailspic-bgcolor);
+  transition: all 0.1s ease;
+}
+
+#detailspictext {
+  color: #d3d5fd;
+  font-size: 3em;
+  font-weight: 500;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  transition: all 0.1s ease;
+}
+
+.alert {
+  width: 50%;
+  height: 10%;
+
+  position: fixed;
+  bottom: -100%;
+  left: 25%;
+
+  border-radius: 10vh;
+  border: 10px solid #f03d3d;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  font-size: 1.7em;
+  color: #2d2e35;
+
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 1s ease-out;
+}
+
+.alert i {
+  padding-left: 0.5em;
+}
+
+.viewnav i {
+  padding-right: 0.6em;
+}
+
+.detailsnav i {
+  padding-right: 0.3em;
 }
