@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styleindex.css" />
     <title>assignments</title>
   </head>
-  <body>
-    <nav style="background-color: #d3d5fd">
+  <body style="background-color:#d3d5fd">
+    <nav>
       <div class="leftnav" style="background-color: #474a56">
         <p>Tech Club</p>
       </div>
@@ -18,11 +18,26 @@
       </div>
     </nav>
 
-    <div class="main" style="background-color: rgb(183, 0, 255)">
+
+    <div class="projectdetails" style="background-color: #929aab">
+      <div class="detailsnav" style="background-color: #2d2e35">
+        <p><i class="fas fa-newspaper"></i> Description</p>
+      </div>
+      <div class="detailscontainer">
+        <div class="detailspic" id="detailspic"><p id="detailspictext"></p></div>
+        <div class="detailsnotes"></div>
+      </div>
+    </div>
+
+    <div class="viewnav" style="background-color: #2d2e35">
+      <p><i class="fas fa-list-alt"></i>Projects </p>
+    </div>
+
+    <div class="main" style="background-color: #d3d5fd;">
       <div class="projectview" style="background-color: #d3d5fd">
-        <div class="viewnav" style="background-color: #2d2e35">
+        <!-- <div class="viewnav" style="background-color: #2d2e35">
           <p><i class="fas fa-list-alt"></i>Projects </p>
-        </div>
+        </div> -->
         <div class="project-list">
           <div
             class="item1 item"
@@ -35,11 +50,15 @@
           </div>
           <div class="item3 item" onclick="alertDeadLink()"><p class="itemtext">Week 3</p></div>
           <div class="item4 item" onclick="alertDeadLink()"><p class="itemtext">Week 4</p></div>
+          <div class="item1 item" onclick="alertDeadLink()"><p class="itemtext">Week 5</p></div>
+          <div class="item2 item" onclick="alertDeadLink()"><p class="itemtext">Week 6</p></div>
+          <div class="item3 item" onclick="alertDeadLink()"><p class="itemtext">Week 7</p></div>
+          <div class="item4 item" onclick="alertDeadLink()"><p class="itemtext">Week 8</p></div>
           <!-- <div class="item4 item"><p class="itemtext">Week 5</p></div> -->
         </div>
       </div>
 
-      <div class="projectdetails" style="background-color: #929aab">
+      <!-- <div class="projectdetails" style="background-color: #929aab">
         <div class="detailsnav" style="background-color: #2d2e35">
           <p><i class="fas fa-newspaper"></i> Description</p>
         </div>
@@ -47,7 +66,8 @@
           <div class="detailspic" id="detailspic"><p id="detailspictext"></p></div>
           <div class="detailsnotes"></div>
         </div>
-      </div>
+      </div> -->
+    </div>
   
     <div class="alert"></div>  
     <script src="jsindex.js"></script>

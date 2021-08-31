@@ -11,6 +11,11 @@ let notes = {
     "ik im submitting this 2 days aftr the deadline but i didnt want to submit some half baked project. ps. colour scheme and transitions took waaayy longer than expected, and this was supposed to b a weeknd proj but i didnt hv time then. <br> PPS click/hover on everything.",
   "Week 3": "dummy placeholder will use dis once yall giv project",
   "Week 4": "what week 3 said.",
+  "Week 5": "project unavailable",
+  "Week 6": "project unavailable",
+  "Week 7": "project unavailable",
+  "Week 8": "project unavailable"
+  
 };
 
 // this is for the p tag inside item (itemtext), where we only add the mouseover event.
